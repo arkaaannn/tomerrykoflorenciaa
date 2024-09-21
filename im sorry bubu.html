@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>im sorry</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f8f9fa;
+      padding: 50px;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffeaa7;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #d35400;
+    }
+    p {
+      color: #2d3436;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 20px;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #c0392b;
+    }
+    .options {
+      display: none;
+      margin-top: 20px;
+    }
+    .options button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .options button:hover {
+      background-color: #229954;
+    }
+    .hidden-page {
+      display: none;
+      background-color: pink;
+      color: white;
+      text-align: center;
+      padding: 50px;
+    }
+    .hidden-page h1 {
+      font-size: 36px;
+    }
+    .flowers {
+      background-image: url('https://www.transparenttextures.com/patterns/debut-light.png');
+      background-repeat: repeat;
+      background-size: cover;
+    }
+    .love {
+      font-size: 40px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Maafin aku ya ayang :(</h2>
+    <p>Aayang, aku minta maaf ya karena aku ngechat teman yang cewek buat nanyain kabar dan kondisi ayaang. Aku cuma khawatir sama ayaang soalnya hilang.</p>
+    <p>Aku ngerti ayaang cemburu. Aku benar-benar gak bermaksud membuat ayaang cemburu dan kesal sama akuu. Maafin aku yaa ayaang, pleaseee...</p>
+    <button onclick="showOptions()">click untuk memafkan atau tidak</button>
+
+    <div class="options" id="options">
+      <button onclick="showHiddenPage()">iyaa aku maaafiin sayaangkkuuu, aku balik yaa</button>
+      <button onclick="showHiddenPage()">iyaa aku maaafiin cintaakuuu, aku balik yaa</button>
+      <button onclick="showHiddenPage()">iyaa aku maaafiin duniakuu, aku balik yaa</button>
+      <button onclick="showHiddenPage()">iyaa aku maaafiin semestakuuu, aku balik yaa</button>
+      <button onclick="showHiddenPage()">iyaa aku maaafiin gantengkuu, aku balik yaa</button>
+      <button onclick="showHiddenPage()">iyaa aku maaafiin maniskuu, aku balik yaa</button>
+      <button onclick="showHiddenPage()">iyaa aku maaafiin bayyiikkuu, aku balik yaa</button>
+      <button onclick="showHiddenPage()">iyaa aku maaafiin sayaang cintakuu, aku balik yaa</button>
+      <button onclick="showHiddenPage()">iyaa aku maaafiin my baby honey sweetie, aku balik yaa</button>
+      <button onclick="showHiddenPage()">iyaa aku maaafiin sayaangku cintaku duuniaaku semestakuu madukuu manisku gulaku, aku balik yaa cintaku sayangkuu</button>
+    </div>
+  </div>
+
+  <div class="hidden-page flowers" id="hiddenPage">
+    <div class="love">💐💖🌸💕🌷💘🌺❤️</div>
+    <h1>Terimakaciii cayaangkuu cintakuu</h1>
+    <p>Yeayyy! I love uu! 💕❤️🌸💘💐</p>
+    <div class="love">💐💖🌸💕🌷💘🌺❤️</div>
+  </div>
+
+  <script>
+    function showOptions() {
+      document.getElementById("options").style.display = "block";
+    }
+
+    function showHiddenPage() {
+      document.querySelector(".container").style.display = "none";
+      document.getElementById("hiddenPage").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
